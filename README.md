@@ -15,7 +15,7 @@ To run this application;
 *  Start local server:
 	- For Python 2.x: `python -m SimpleHTTPServer 8000`
 	- For Python 3.x: `python -m http.server 8000`
-* Then visit the link: http://localhost:8000 to view the application.
+* Then visit the link: `http://localhost:8000` to view the application.
 
 ## Dependencies
 
