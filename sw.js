@@ -60,6 +60,10 @@ self.addEventListener('fetch', event => {
 				*/
 				return fetch(event.request)
 				.then(response => {
+					//Check if the response is valid
+					if(!response || response.status !== 200 || response.type !== 'basic') { 
+						return response; 
+					}
 					//Clone response so it would be available to both the browser and the cache
 					let clonedResponse = response.clone()
 					caches.open(cacheName)

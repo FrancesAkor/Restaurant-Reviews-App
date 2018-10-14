@@ -221,7 +221,7 @@ nav h1 a {
   height: auto;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -335,7 +335,7 @@ td {
   padding: 30px 40px 80px;
 }
 
-#reviews-container h2 {
+#reviews-container h3 {
   color: #f58500;
   font-size: 20pt;
   font-weight: 300;
@@ -465,5 +465,11 @@ td {
 
   #reviews-list li p {
     font-size: 20pt;
+  }
+}
+
+@media screen and (min-width: 1695px) {
+  #restaurants-list {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
